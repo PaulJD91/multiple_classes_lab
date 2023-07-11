@@ -1,6 +1,6 @@
 from person import Person
 from bus import Bus
-# from bus_stop import BusStop
+from bus_stop import BusStop
 
 person_1 = Person("Steven", 34)
 person_2 = Person("Laura", 21)
@@ -38,13 +38,13 @@ bus.empty_bus()
 print(f"The {bus.route_number} bus dropped off all of its passengers.")
 print(f"There are now {bus.passenger_count()} passengers on the bus.")
 
-# bus_stop = BusStop("Buchanan Bus Station")
-# print(f"There are {bus_stop.queue_length()} pasengers waiting at {bus_stop.name}.")
+bus_stop = BusStop("Buchanan Bus Station")
+print(f"There are {bus_stop.queue_length()} pasengers waiting at {bus_stop.name}.")
 
-# bus_stop.add_to_queue(person_1)
-# bus_stop.add_to_queue(person_2)
-# bus_stop.add_to_queue(person_3)
-# print(f"{bus_stop.queue_length()} passengers have joined the queue at {bus_stop.name}.")
+bus_stop.add_to_queue(person_1)
+bus_stop.add_to_queue(person_2)
+bus_stop.add_to_queue(person_3)
+print(f"{bus_stop.queue_length()} passengers have joined the queue at {bus_stop.name}.")
 
 # print(f"{bus_stop.queue_length()} passengers are leaving the queue.")
 # bus_stop.clear()
