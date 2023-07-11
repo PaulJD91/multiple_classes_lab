@@ -1,4 +1,4 @@
-from bus import Bus
+
 
 class BusStop:
 
@@ -15,7 +15,4 @@ class BusStop:
     def clear(self):
         self.queue.clear()
 
-    def pick_up_from_stop(self, bus_stop):
-        for self.passengers in bus_stop:
-            Bus.pick_up()
-        self.queue.clear()
+   
