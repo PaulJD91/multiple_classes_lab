@@ -6,6 +6,8 @@ person_1 = Person("Steven", 34)
 person_2 = Person("Laura", 21)
 person_3 = Person("Wanda", 58)
 
+passengers = [person_1, person_2, person_3]
+
 print("There are 3 potential passengers.")
 print(f"Name: {person_1.name}, Age: {person_1.age}.")
 print(f"Name: {person_2.name}, Age: {person_2.age}.")
@@ -16,8 +18,8 @@ bus_left = bus.drive()
 print(f"The {bus.route_number} bus is heading to {bus.destination}.")
 print(f"The {bus.route_number} bus has left the station. {bus.drive()}.")
 
-# starting_passenger_count = bus.passenger_count()
-# print(f"There are initially {starting_passenger_count} passengers on the bus.")
+starting_passenger_count = bus.passenger_count()
+print(f"There are initially {starting_passenger_count} passengers on the bus.")
 
 # bus.pick_up(person_1)
 # print(f"The {bus.route_number} bus picked up {bus.passengers[0].name}.")
