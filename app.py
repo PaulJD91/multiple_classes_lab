@@ -12,8 +12,9 @@ print(f"Name: {person_2.name}, Age: {person_2.age}.")
 print(f"Name: {person_3.name}, Age: {person_3.age}.")
 
 bus = Bus(900, "Edinburgh")
+bus_left = bus.drive()
 print(f"The {bus.route_number} bus is heading to {bus.destination}.")
-# print(f"The {bus.route_number} bus has left the station. {bus.drive()}.")
+print(f"The {bus.route_number} bus has left the station. {bus.drive()}.")
 
 # starting_passenger_count = bus.passenger_count()
 # print(f"There are initially {starting_passenger_count} passengers on the bus.")
