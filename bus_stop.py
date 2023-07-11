@@ -1,3 +1,5 @@
+from bus import Bus
+
 class BusStop:
 
     def __init__(self, name):
@@ -9,3 +11,11 @@ class BusStop:
 
     def queue_length(self):
         return len(self.queue)
+    
+    def clear(self):
+        self.queue.clear()
+
+    def pick_up_from_stop(self, bus_stop):
+        for self.passengers in bus_stop:
+            Bus.pick_up()
+        self.queue.clear()

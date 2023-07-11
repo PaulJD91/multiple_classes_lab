@@ -19,3 +19,5 @@ class Bus:
 
     def empty_bus(self):
         self.passengers.clear()
+
+    
