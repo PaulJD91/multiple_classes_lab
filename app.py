@@ -34,9 +34,9 @@ bus.pick_up(person_2)
 bus.pick_up(person_3)
 print(f"The {bus.route_number} bus picked up {bus.passenger_count()} passengers.")
 
-# bus.empty_bus()
-# print(f"The {bus.route_number} bus dropped off all of its passengers.")
-# print(f"There are now {bus.passenger_count()} passengers on the bus.")
+bus.empty_bus()
+print(f"The {bus.route_number} bus dropped off all of its passengers.")
+print(f"There are now {bus.passenger_count()} passengers on the bus.")
 
 # bus_stop = BusStop("Buchanan Bus Station")
 # print(f"There are {bus_stop.queue_length()} pasengers waiting at {bus_stop.name}.")
